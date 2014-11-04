@@ -1,0 +1,41 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>CSS Media Queries</title>
+		
+		<style>
+			body { margin: 10px auto; }
+				
+			.container { 
+				background-color: #eee;
+				border: 2px solid #999;
+				margin: 5px auto;
+				width: 1000px;
+			}
+			
+			@media (max-width: 1024px) {
+				.container { 
+					background-color: #999;
+					width: 760px;
+				}
+			}
+			
+			@media (max-width: 800px) {
+				.container { 
+					background-color: #000;
+					color: #fff;
+					width: 640px;
+				}
+			}
+			
+			/* @media (min-width: 700px) and (orientation: landscape) { ... } */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Some Content</h1>
+		</div>
+	</body>
+</html>
