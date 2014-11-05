@@ -1,0 +1,56 @@
+@primary: #00f;
+
+body {
+	padding: 1.5em 2em;
+}
+
+h2 {
+	border-width: 1px;
+	border-style: solid;
+	border-color: @primary;
+	color: @primary;
+	height: 50px;
+	width: 500px;
+}
+
+.boxer {
+	border: 1px solid #000;
+	margin: 1em 1.5em;
+	padding: 0.5em;
+	float: left;
+	height: 100px;
+	width: 200px;
+}
+
+.rounded {
+	-webkit-border-radius: 5px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius: 5px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-radius: 5px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.shadow(@hlength: 10px; @vlength: 10px; @blurRadius: 5px; @spreadRadius: 5px) {
+	-webkit-box-shadow: @hlength @vlength @blurRadius @spreadRadius rgba(0,0,0,0.75);
+	-moz-box-shadow: @hlength @vlength @blurRadius @spreadRadius rgba(0,0,0,0.75);
+	box-shadow: @hlength @vlength @blurRadius @spreadRadius rgba(0,0,0,0.75);
+}
+
+
+div.box {
+	background-color: #ccc;
+	.boxer;
+	.rounded;
+	.shadow;
+}
+
+div.box2 {
+	background-color: #c9c;
+	.boxer;
+	.rounded;
+	.shadow(20px; 20px; 15px; 5px);
+}
