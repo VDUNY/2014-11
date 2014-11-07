@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>VDUNY - Home</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap.cosmo.min.css">
+		<link rel="stylesheet" href="site.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="http://raw.github.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+		<script src="http://raw.github.com/scottjehl/Respond/master/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- fixed navbar -->
+		<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><strong><abbr title="Visual Developers of Upstate New York">VDUNY</abbr></strong></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="about.html">About</a></li>
+						<li class="active"><a href="meetings.html">Meetings</a></li>
+						<li><a href="mailingList.html">Mailing List</a></li>
+						<li><a href="sponsors.html">Sponsors</a><li>
+						<li><a href="history.html">History</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#Login">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Page Content -->
+		<div class="container main">
+			<h2>Meetings</h2>
+
+			<div class="row">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#2013">2013</a></li>
+					<li><a href="#2012">2012</a></li>
+					<li><a href="#2011">2011</a></li>
+					<li><a href="#2010">2010</a></li>
+					<li><a href="#2009">2009</a></li>
+					<li><a href="#2008">2008</a></li>
+					<li><a href="#2007">2007</a></li>
+				</ul>
+				<ul class="nav nav-pills nav-justified">
+					<li><a href="#jan">Jan</a></li>
+					<li><a href="#Feb">Feb</a></li>
+					<li><a href="#Mar">Mar</a></li>
+					<li><a href="#Apr">Apr</a></li>
+					<li><a href="#May">May</a></li>
+					<li><a href="#Jun">Jun</a></li>
+					<li class="disabled"><a href="#Jul">Jul</a></li>
+					<li class="disabled"><a href="#Aug">Aug</a></li>
+					<li><a href="#Sep">Sep</a></li>
+					<li><a href="#Oct">Oct</a></li>
+					<li class="active"><a href="#Nov">Nov</a></li>
+					<li class="disabled"><a href="#Dec">Dec</a></li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<h3>{{Presenter}} will be presenting {{Title}}</h3>
+				<h4>{{Weekday}}, {{Month}} {{day}}, {{Year}}  {{Time}}</h4>
+				<h5><i class="fa fa-map-marker"></i> <a href="bing.com/maps" target="_blank" title="Meeting location on map">{{Location Address - Link}}</a></h5>
+
+				<div class="col-lg-3">
+					<img src="http://lorempixel.com/g/256/256/people/1/" height="256" width="256" alt="Presenter Icon" />
+					<br />
+					{{Bio Information}}<br />
+					{{Title}}<br />
+					{{Company}}
+				</div>
+
+				<div class="col-lg-9">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero quam, lobortis vel felis et, interdum mollis neque. Cras ac porttitor leo. Suspendisse urna eros, lobortis sit amet neque at, varius aliquam sem. Nunc quis arcu quis massa sagittis consequat. Nulla in sem sit amet mauris euismod condimentum id ac dolor. Nullam ac ipsum tincidunt, tincidunt odio eget, mollis quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vehicula fermentum orci in adipiscing. Donec ultrices lacus quis nulla tempus ultrices. In congue risus non metus hendrerit, vitae rutrum tellus tincidunt. Duis venenatis, ipsum ut convallis commodo, sem orci auctor massa, id suscipit dui odio ac dolor. Duis nunc augue, dignissim quis sollicitudin hendrerit, sagittis ac mi. Quisque tellus ipsum, bibendum a ipsum lacinia, hendrerit sodales justo. Suspendisse volutpat quis neque vitae molestie.</p>
+
+					<p>Etiam elementum in nibh ac fermentum. Donec scelerisque volutpat sem, eu pharetra augue aliquam scelerisque. Morbi euismod ullamcorper est, non varius nunc gravida ultrices. Nulla pulvinar placerat nisl, vel gravida nisl luctus tempor. Fusce vitae leo convallis, aliquet est sit amet, tempor diam. Pellentesque id est nunc. Praesent laoreet massa facilisis ipsum porttitor sollicitudin. Phasellus ac est et elit condimentum venenatis a ac augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis, mauris vitae suscipit iaculis, purus arcu tristique quam, a sollicitudin nisi est non elit.</p>
+
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Presentation Materials</h3>
+						</div>
+						<div class="panel-body">
+							<div class="media">
+								<a href="#" class="pull-left">
+									<i class="fa fa-file-text fa-4x"></i><br />
+								</a>
+
+								<div class="media-body">
+									<h4>{{ Filename }}</h4>
+									Description of what the file is about...
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="pull-right">
+						<!-- Ribbon Social Icons - http://www.iconarchive.com/show/free-ribbon-social-icons-by-designbolts.html -->
+												<a href="http://linkedin.com"><img src="ribbon-icons/Linkedin-icon-a.png" alt="LinkedIn logo" /></a><a href="http://twitter.com"><img src="ribbon-icons/Twitter-icon-a.png" alt="Twitter logo" /></a><a href="http://facebook.com"><img src="ribbon-icons/Facebook-icon-a.png" alt="Facebook logo" /></a><!--<img src="ribbon-icons/Google-plus-icon-a.png" alt="Google+ logo" /><img src="ribbon-icons/RSS-icon-a.png" alt="RSS symbol" />-->
+					</div>
+
+					<div style="margin: 5px 0;">
+						Founded by Bob Nims<br />
+						&copy; 1996 - 2013 Visual Developers of Upstate New York<br/><br />
+						<strong>Co-Chairs</strong><br />
+						S. Kyle Korndoerfer<br />
+						Joel Bennett
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- SCRIPTS -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		<!--<script src="/js/kendo.web.min.js"></script>-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-min.js"></script>
+		<!--<script src="knockout-kendo.min.js"></script>-->
+	</body>
+</html>

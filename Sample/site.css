@@ -1,0 +1,21 @@
+/* VDUNY style definitions */
+
+body {
+	margin-bottom: 5px;
+}
+
+.main {
+	margin-top: 50px;
+}
+
+footer,
+.footer {
+	background-color: rgb(245, 245, 245);
+	margin-top: 2em;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
